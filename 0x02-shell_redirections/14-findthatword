@@ -1,0 +1,2 @@
+grep -F "root" /etc/passwd
+
