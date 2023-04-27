@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displays content of the current directory
+
+ls_out=$(ls)
+for i in $ls_out
+do
+str_out=$( echo "$i" | cut -d "-" -f2 )
+echo "$str_out"
+done
