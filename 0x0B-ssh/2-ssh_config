@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# SSH configuration file so that we can connect without a password
+cat ~/.ssh/school.pub | ssh ubuntu@100.26.121.234 "mkdir -p ~/.ssh/authorized_keys"
