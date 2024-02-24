@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#connects to a server using a private key
+
+ssh ubuntu@34.201.164.53
