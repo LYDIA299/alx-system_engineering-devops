@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# syntax to add a second public key to the authorized_file at the server. 
+ssh-copy-id -i ~/.ssh/second_key.pub user@your_server_address
+
+# or add it directly in the authorized file at server side
+# vi ~/.ssh/authorized_keys
