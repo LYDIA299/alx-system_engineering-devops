@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Get Apache to run on the container
-echo "ServerName localhost" >> /etc/apache2.conf
+apt-get update
+apt-get install apache2
+cp /etc/passwd /tmp/
+echo OK > /tmp/isworking
+echo "ServerName localhost" > /etc/apache2.conf
 service Apache2 start
